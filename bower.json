@@ -6,7 +6,7 @@
   ]
   ,
   "license": "MIT",
-  
+
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,6 +16,6 @@
   ],
 
   "dependencies": {
-      "ckeditor": "https://github.com/spalax/ckeditor-releases.git#possibilities_to_compile_as_part_of_dojo_toolkit_application"
+      "ckeditor": "https://github.com/websoftix/ckeditor-releases.git#basic/stable-dojo"
   }
 }
