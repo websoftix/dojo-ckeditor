@@ -35,12 +35,13 @@ define([
 
                         this.emit('dojo-ckeditor-ready', this);
                     }));
-
-                    this.editor.on('change', lang.hitch(this, function (){
-                        this._handleOnChange(this.get('value'));
-                    }));
+                    // we dissable the handling of "change" events to avoid dgrid making a lot of PUT requests to server
+                    //this.editor.on('change', lang.hitch(this, function (){
+                    //    this._handleOnChange(this.get('value'));
+                    //}));
 
                     this.editor.on('blur', lang.hitch(this, function (){
+                        this._handleOnChange(this.get('value'));
                         this._onBlur();
                     }));
 
